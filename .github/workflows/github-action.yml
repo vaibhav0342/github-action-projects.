@@ -5,9 +5,10 @@ on:
     branches: [main]  #It will trigger on push events to the main branch.
  
   workflow_dispatch:   #This allows you to manually trigger
-  
   schedule:
-         -cron: "0 5 * *  *"    #run every day at 5:00 AM UTC
+    -cron: "1 * * * *"
+  
+  
 
 permissions:
   contents: write
