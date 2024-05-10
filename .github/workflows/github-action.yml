@@ -1,19 +1,19 @@
 name: CI/CD pipeline 
 on: push
 jobs:
-    builds:
-        runs-on: ubuntu-latest
-        steps:
-            -name: checkout repo
-             uses: actions/checkout@v4
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
 
-            -name: setup node 
-             uses: actions/setup-node@v4
-             with:
-                node-version: 18
+      - name: setup node 
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-            -name: install npm
-             run: npm install
+      - name: install npm
+        run: npm install
             
-            -name: build project
-            run: npm run builds
+      - name: build project
+        run: npm run build
