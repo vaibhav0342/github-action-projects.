@@ -35,6 +35,8 @@ jobs:
 
       - name: Build Project
         run: npm run build
+        env:
+            REACT_name: ${{vars.REACT}}
        
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
