@@ -6,8 +6,7 @@ on:
  
   workflow_dispatch:   #This allows you to manually trigger
   schedule:
-    -cron: "1 * * * *"
-  
+    - cron: "1 * * * *"
   
 
 permissions:
