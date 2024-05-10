@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {process.env.REACT_name || "Github Actions Tutorial"} - By
+          {process.env.REACT || "Github Actions Tutorial"} - By
           DevOps Pro
         </p>
         <a
